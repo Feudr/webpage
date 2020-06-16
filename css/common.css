@@ -1,0 +1,223 @@
+/* 公共CSS */
+
+/* 站点导航开始 */
+/* 左边 */
+.container {
+    width: 1200px;
+    margin: auto;
+}
+.nav-site .link {
+    font-size: 12px;
+    color: #4d555d;
+    margin-right: 10px;
+}
+/* 右边 */
+.nav-site .dropdown {
+    display: block;
+    height: 100%;
+}
+.nav-site .dropdown-toggle {
+    padding: 0 16px 0 12px;
+    display: inline-block;
+    position: relative;
+    z-index: 2;
+    border-left: 1px solid #f3f5f7;
+    border-right: 1px solid #f3f5f7;
+}
+/* 倒三角图标 */
+.nav-site .dropdown-arrow {
+    display: inline-block;
+    width: 8px;
+    height: 6px;
+    background: url(../img/dropdown-arrow.png) no-repeat;
+    margin-left: 8px;
+    vertical-align: middle;
+} 
+/* 下拉层默认隐藏 */
+.nav-site .dropdown-layer {
+    position: relative;
+    z-index: 1;
+    display: none;
+    position: absolute;
+    top: 43px;
+    background-color: #fff;
+    border: 1px solid #cdd0d4;
+}
+.dropdown {
+    position: relative;
+}
+.nav-site .dropdown-left {
+    position: absolute;
+    left: 0;
+}
+.nav-site .dropdown-item {
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    color: #4d555d;
+    padding: 0 12px 0 12px;
+    /* 强制一行显示 */
+    white-space: nowrap;
+}
+
+
+/* 鼠标滑过的背景色 */
+.nav-site .dropdown-item:hover {
+    background-color: #f3f5f7;
+}
+
+/* 头部下拉菜单鼠标移入时的样式 */
+.head-active .dropdown-toggle {
+    /* 背景、边框颜色改变 */
+    background-color: #fff;
+    border-color: #cdd0d4;
+}
+.head-active .dropdown-arrow {
+    /* 箭头改变 */
+    background: url(../img/dropdown-arrow-active.png);
+}
+.head-active .dropdown-layer {
+    /* 下拉层显示 */
+    display: block;
+}
+
+/* 简单的动画过渡效果可以用transition实现,比如从状态A过渡到B,从B过渡到A
+*  复杂的动画过渡效果可以用animation实现,比如从状态A过渡到B,又过渡到A
+*  写一个通用的class控制状态过渡时间,加在需要显示隐藏的对象上
+*/
+.transition {
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+/* 通过js添加或去除fadeOut,实现淡入淡出效果 */
+.fadeOut {
+    visibility: hidden;
+    opacity: 0;
+}
+/* 通过js添加或去除slideUpDown,实现下拉菜单铺开卷起效果 */
+.slideUpDownCollapse{
+    height:0 !important;
+    padding-top:0 !important;
+    padding-bottom:0 !important;
+}  
+
+.slideLeftRightCollapse{
+    width:0 !important;
+    padding-left:0 !important;
+    padding-right:0 !important;
+} 
+
+ 
+/* 头部搜索框  */
+.search {
+    /* 父元素绝对定位 */
+    position: relative;
+    border: 1px solid #cfd2d5;
+    margin: 35px 0 0 145px;
+}
+/* 文本输入框 */
+.search-inputbox {
+    /* width: 605px; */
+    /* 减去左右padding */
+    width:  585px;
+    height: 40px;
+    line-height: 40px;
+    /* 设置文字左右间隔 */
+    padding: 0 10px;
+    background-color: #fff;
+}
+/* 搜索按钮 */
+.search-btn {
+    width: 73px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    background-color: #f50;
+    cursor: pointer;
+}
+/* 下拉层绝对定位 */
+.search-layer {
+    position: absolute;
+    /* 100%相对于父容器的高度,父容器未设置高度,由子元素撑开 */
+    top: 100%;
+    left: -1px;
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #cfd2d5;
+    /* 下拉层默认隐藏 */
+    display: none;
+}
+.search-layer-item {
+    height: 24px;
+    line-height: 24px;
+    padding: 0 10px;
+    cursor: pointer;
+}
+.search-layer-item:hover {
+    background-color: #f3f5f7;
+    /* 超出部分变省略号 */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* 中心焦点区开始 */
+.focus {
+    width: 100%;
+    height: 504px;
+    background-color: #f3f5f7;
+    margin-bottom: 8px;
+}
+/* 左边商品分类开始 */
+.focus-category {
+    width: 203px;
+    margin-top: -62px;
+    font-size: 14px;
+    background-color: #f01414;
+    margin-right: 8px;
+}
+.focus-category .category-title {
+    display: block;
+    height: 54px;
+    line-height: 54px;
+    font-size: 14px;
+    color: #fff;
+    background-color: #c81414;
+    padding: 0 0 0 20px;
+}
+.category-title .icon {
+    font-size: 16px;
+    margin-right: 10px;
+}
+/* 商品分类无序列表 */
+/* ul */
+.category-items .dropdown-toggle {
+    width: 208px;
+    text-indent: 16px;
+    height: 36px;
+    line-height: 36px;
+    font-size: 14px;
+    color: #fff;
+    position: relative;
+}
+.category-items .dropdown-link {
+    color: #fff;
+}
+/* 箭头绝对定位 */
+.category-arrow {
+    position: absolute;
+    right: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: simsun;
+}
+
+/* 商品列表下拉层 */
+.category {
+    position: relative;
+}

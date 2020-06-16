@@ -1,0 +1,1091 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>购物网站</title>
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
+    <link rel="stylesheet" href="css/common.css"/>
+</head>
+<body>
+    <!-- 站点导航开始 -->
+    <div class="nav-site">  
+        <div class="container">
+            <!-- 左边 -->
+            <ul class="fl">
+                <li class="fl"><a href="#" target="_blank" class="nav-site-login">亲,请登录</a></li>
+                <li class="fl"><a href="#" class="nav-site-signUp link">免费注册</a></li>
+                <li class="fl"><a href="#" class="nav-site-mobile link">手机逛</a></li>
+            </ul>
+
+            <!-- 右边 -->
+            <ul class="fr">
+                <li class="dropdown fl" data-active="head">
+                    <a href="#" target="_blank" class="dropdown-toggle link">个人中心<i class="dropdown-arrow"></i></a>
+                    <!-- 下拉菜单用浮动的列表层表示 -->
+                    <ul class="dropdown-layer dropdown-left">
+                        <li><a href="#" target="_blank" class="dropdown-item">已买到的宝贝</a></li>
+                        <li><a href="#" target="_blank" class="dropdown-item">我的足迹</a></li>
+                    </ul>
+                </li>
+                <li class="head dropdown fl" data-active="head">
+                    <a href="#" target="_blank" class="dropdown-toggle link">收藏夹<i class="dropdown-arrow"></i></a>
+                    <!-- 下拉菜单用浮动的列表层表示 -->
+                    <ul class="dropdown-layer dropdown-left">
+                        <li><a href="#" target="_blank" class="dropdown-item">收藏的宝贝</a></li>
+                        <li><a href="#" target="_blank" class="dropdown-item">收藏的店铺</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown fl">
+                    <a href="#" target="_blank" class="nav-site-category dropdown-toggle link">商品分类</a>
+                </li>                    
+                <li class="head dropdown fl" data-active="head">
+                    <a href="#" target="_blank" class="dropdown-toggle link">卖家中心<i class="dropdown-arrow"></i></a>
+                    <!-- 下拉菜单用浮动的列表层表示 -->
+                    <ul class="dropdown-layer dropdown-left">
+                        <li><a href="#" target="_blank" class="dropdown-item">免费开店</a></li>
+                        <li><a href="#" target="_blank" class="dropdown-item">已卖出的宝贝</a></li>
+                        <li><a href="#" target="_blank" class="dropdown-item">出售中的宝贝</a></li>
+                        <li><a href="#" target="_blank" class="dropdown-item">卖家服务市场</a></li>
+                        <li><a href="#" target="_blank" class="dropdown-item">卖家培训中心</a></li>
+                        <li><a href="#" target="_blank" class="dropdown-item">体验中心</a></li>
+                    </ul>
+                </li>
+                <li class="head nav-site-service dropdown fl" data-active="head">
+                    <a href="#" target="_blank" class="dropdown-toggle link">联系客服<i class="dropdown-arrow"></i></a>
+                    <!-- 下拉菜单用浮动的列表层表示 -->
+                    <ul class="dropdown-layer dropdown-right">
+                        <li><a href="#" target="_blank" class="dropdown-item">消费者客服</a></li>
+                        <li><a href="#" target="_blank" class="dropdown-item">卖家客服</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- 站点导航结束 -->
+
+    <!-- 头部搜索栏开始 -->
+    <div class="header">
+        <div class="container">
+            <!-- 左边logo -->
+            <h1 class="fl"><a href="./index.html" class="header-logo">淘宝网</a></h1>
+
+            <!-- 中间搜索框 -->
+            <div class="search fl">
+                <form action="https://s.taobao.com/search">
+                    <!-- 搜索框 -->
+                    <input type="text" name="q" placeholder="灵魂美食一元起" autocomplete="off" class="search-inputbox fl"/>
+                    <!-- 搜索按钮 -->
+                    <input type="submit" value="搜索" class="search-btn fl"/>
+                </form>
+
+                <!-- 搜索框的自动下拉层 -->
+                <ul class="search-layer">
+                    <li class="search-layer-item">111</li>
+                    <li class="search-layer-item">111</li>
+                    <li class="search-layer-item">111</li>
+                </ul>
+            </div>
+
+            
+        </div>
+    </div>
+    <!-- 头部搜索栏结束 -->
+
+    <!-- 网站主导航开始 -->
+    <div class="nav-main">
+        <div class="container">
+            <a href="#" class="link">数码城</a>
+            <a href="#" class="link">天黑黑</a>
+            <a href="#" class="link">团购</a>
+            <a href="#" class="link">发现</a>
+            <a href="#" class="link">二手特价</a>
+            <a href="#" class="link">名品汇</a>
+        </div>
+    </div>
+    <!-- 网站主导航结束 -->
+
+    <!-- 中心焦点区开始 -->
+    <div class="focus">
+        <div class="container clearfix">
+            <!-- 商品分类开始 -->
+            <div class="fl focus-category">
+                <!-- 标题 -->
+                <a href="#" target="_blank" class="category-title"><i class="icon">&#xe608;</i>商品分类</a>
+                <!-- 无序列表 -->
+                <ul class="category-list">
+                    <li class="category-items category-active" data-active="category" data-load="js/category-detail-1.json">
+                        <div class="dropdown-toggle">
+                            <a href="###" target="_blank" class="dropdown-link">家用电器</a>
+                            <!-- 右箭头 -->
+                            <i class="category-arrow">&gt;</i>
+                        </div>
+                        <!-- 商品列表下拉层 -->
+                        <!-- <div class="dropdown-layer">
+                            <dl class="category-layer-details cf">
+                                <dt class="fl layer-title"><a href="#" target="_blank" class="layer-item link">手机通讯</a></dt>
+                                <dd class="fl layer-item">
+                                    <a href="#" target="_blank" class="link">手机</a>
+                                    <a href="#" target="_blank" class="link">对讲机</a>
+                                    <a href="#" target="_blank" class="link">以旧换新</a>
+                                    <a href="#" target="_blank" class="link">手机维修</a>
+                                </dd>
+                            </dl>
+                        </div> -->
+                    </li>
+                    <li class="category-items category-active" data-active="category" data-load="js/category-detail-2.json">
+                        <div class="dropdown-toggle">
+                            <a href="###" target="_blank" class="dropdown-link">手机</a
+                            >、<a href="###" target="_blank" class="dropdown-link">运营商</a
+                            >、<a href="###" target="_blank" class="dropdown-link">数码</a>
+                            <!-- 右箭头 -->
+                            <i class="category-arrow">&gt;</i>
+                        </div>
+                        <!-- 商品列表下拉层 -->
+                        
+                    </li>
+                    <li class="category-items category-active" data-active="category" data-load="js/category-detail-3.json">
+                        <div class="dropdown-toggle">
+                            <a href="###" target="_blank" class="dropdown-link">电脑</a
+                            >、<a href="###" target="_blank" class="dropdown-link">办公</a>
+                            <!-- 右箭头 -->
+                            <i class="category-arrow">&gt;</i>
+                        </div>
+                        
+                    </li>
+                    <li class="category-items category-active" data-active="category" data-load="js/category-detail-4.json">
+                        <div class="dropdown-toggle">
+                            <a href="###" target="_blank" class="dropdown-link">家居</a
+                            >、<a href="###" target="_blank" class="dropdown-link">家具</a
+                            >、<a href="###" target="_blank" class="dropdown-link">家装</a
+                            >、<a href="###" target="_blank" class="dropdown-link">厨具</a>
+                            <!-- 右箭头&gt; -->
+                            <i class="category-arrow">&gt;</i>
+                        </div>
+                        
+                    </li>
+                    <li class="category-items category-active" data-active="category" data-load="js/category-detail-5.json">
+                        <div class="dropdown-toggle">
+                            <a href="###" target="_blank" class="dropdown-link">男装</a
+                            >、<a href="###" target="_blank" class="dropdown-link">女装</a
+                            >、<a href="###" target="_blank" class="dropdown-link">童装</a
+                            >、<a href="###" target="_blank" class="dropdown-link">内衣</a>
+                            <!-- 右箭头 -->
+                            <i class="category-arrow">&gt;</i>
+                        </div>
+                        
+                    </li>
+                    <li class="category-items category-active" data-active="category" data-load="js/category-detail-6.json">
+                        <div class="dropdown-toggle">
+                            <a href="###" target="_blank" class="dropdown-link">化妆</a
+                            >、<a href="###" target="_blank" class="dropdown-link">清洁</a
+                            >、<a href="###" target="_blank" class="dropdown-link">宠物</a>
+                            <!-- 右箭头 -->
+                            <i class="category-arrow">&gt;</i>
+                        </div>
+                        
+                    </li>
+                    <li class="category-items category-active" data-active="category" data-load="js/category-detail-7.json">
+                        <div class="dropdown-toggle">
+                            <a href="###" target="_blank" class="dropdown-link">运动户外</a
+                            >、<a href="###" target="_blank" class="dropdown-link">钟表</a>
+                            <!-- 右箭头 -->
+                            <i class="category-arrow">&gt;</i>
+                        </div>
+                        
+                    </li>
+                    <li class="category-items category-active" data-active="category" data-load="js/category-detail-8.json">
+                        <div class="dropdown-toggle">
+                            <a href="###" target="_blank" class="dropdown-link">汽车</a
+                            >、<a href="###" target="_blank" class="dropdown-link">汽车用品</a>
+                            <!-- 右箭头 -->
+                            <i class="category-arrow">&gt;</i>
+                        </div>
+                        
+                    </li>
+                    <li class="category-items category-active" data-active="category" data-load="js/category-detail-9.json">
+                        <div class="dropdown-toggle">
+                            <a href="###" target="_blank" class="dropdown-link">母婴</a
+                            >、<a href="###" target="_blank" class="dropdown-link">玩具乐器</a>
+                            <!-- 右箭头 -->
+                            <i class="category-arrow">&gt;</i>
+                        </div>
+                        
+                    </li>
+                    <li class="category-items category-active" data-active="category" data-load="js/category-detail-10.json">
+                        <div class="dropdown-toggle">
+                            <a href="###" target="_blank" class="dropdown-link">食品</a
+                            >、<a href="###" target="_blank" class="dropdown-link">酒类</a
+                            >、<a href="###" target="_blank" class="dropdown-link">生鲜</a
+                            >、<a href="###" target="_blank" class="dropdown-link">特产</a>
+                            <!-- 右箭头 -->
+                            <i class="category-arrow">&gt;</i>
+                        </div>
+                        
+                    </li>
+                    <li class="category-items category-active" data-active="category" data-load="js/category-detail-11.json">
+                        <div class="dropdown-toggle">
+                            <a href="###" target="_blank" class="dropdown-link">医药保健</a>
+                            <!-- 右箭头 -->
+                            <i class="category-arrow">&gt;</i>
+                        </div>
+                        
+                    </li>
+                    <li class="category-items category-active" data-active="category" data-load="js/category-detail-12.json">
+                        <div class="dropdown-toggle">
+                            <a href="###" target="_blank" class="dropdown-link">图书</a
+                            >、<a href="###" target="_blank" class="dropdown-link">音像</a
+                            >、<a href="###" target="_blank" class="dropdown-link">电子书</a>
+                            <!-- 右箭头 -->
+                            <i class="category-arrow">&gt;</i>
+                        </div>
+                        
+                    </li>
+                    <li class="category-items category-active" data-active="category" data-load="js/category-detail-13.json">
+                        <div class="dropdown-toggle">
+                            <a href="###" target="_blank" class="dropdown-link">彩票</a
+                            >、<a href="###" target="_blank" class="dropdown-link">旅行</a
+                            >、<a href="###" target="_blank" class="dropdown-link">充值</a
+                            >、<a href="###" target="_blank" class="dropdown-link">票务</a>
+                            <!-- 右箭头 -->
+                            <i class="category-arrow">&gt;</i>
+                        </div>
+                        
+                    </li>
+                    <li class="category-items category-active" data-active="category" data-load="js/category-detail-14.json">
+                        <div class="dropdown-toggle">
+                            <a href="###" target="_blank" class="dropdown-link">理财</a
+                            >、<a href="###" target="_blank" class="dropdown-link">众筹</a
+                            >、<a href="###" target="_blank" class="dropdown-link">白条</a
+                            >、<a href="###" target="_blank" class="dropdown-link">保险</a>
+                            <!-- 右箭头 -->
+                            <i class="category-arrow">&gt;</i>
+                        </div>
+                        
+                    </li>
+                </ul>
+            </div>
+            
+            <!-- 幻灯片开始 -->
+            <div id="focus-slide" class="fl slide slide-fade">
+                <!-- 图片容器 -->
+                <div class="slide-container">
+                    <!-- <img src="img/focus-slide/4.png" alt=""/> -->
+                    <img src="img/focus-slide/2.png" alt=""/>
+                    <img src="img/focus-slide/3.png" alt=""/>
+                    <img src="img/focus-slide/4.png" alt=""/>
+                    <img src="img/focus-slide/rolling1.jpg" alt=""/>
+                    <!-- <img src="img/focus-slide/1.png" alt=""/> -->
+                </div>
+
+                <!-- 小圆点按钮容器 -->
+                <ol class="slide-indicator-wrap">
+                    <!-- 实际上只有4张图,重复2张是为了无缝切换 -->
+                    <!-- <li class="fl slide-indicator slide-indicator-active text-hidden">1</li>
+                    <li class="fl slide-indicator text-hidden">2</li>
+                    <li class="fl slide-indicator text-hidden">3</li>
+                    <li class="fl slide-indicator text-hidden">4</li> -->
+                </ol>
+
+                <!-- 左切换箭头 -->
+                <i class="slide-control slide-control-left">&lt;</i>
+                <!-- 右切换箭头 -->
+                <i class="slide-control slide-control-right">&gt;</i>
+            </div>
+            <!-- 幻灯片结束 -->
+
+            <!-- 右侧栏开始 -->
+            <div class="fl focus-sidebar">
+                <!-- 上面快报 -->
+                <div class="sidebar-news">
+                    <div class="news-header">
+                        <h2 class="fl sidebar-news-title">快报</h2>
+                        <a href="#" target="_blank" class="fr link">更多 &gt;</a>
+                    </div>
+                    <div class="news-bottom">
+                        <p class="text-ellipsis">
+                            <a href="###" target="_blank" class="link"><strong>[特惠]</strong> 精选图书每满150减50</a>
+                        </p>
+                        <p class="text-ellipsis">
+                            <a href="###" target="_blank" class="link"><strong>[公告]</strong> 因广州图书仓搬仓升级配送延迟</a>
+                        </p>
+                        <p class="text-ellipsis">
+                            <a href="###" target="_blank" class="link"><strong>[特惠]</strong> 爆款手机12期免息</a>
+                        </p>
+                        <p class="text-ellipsis">
+                            <a href="###" target="_blank" class="link"><strong>[公告]</strong> 广东、福建受台风影响配送延迟</a>
+                        </p>
+                        <p class="text-ellipsis">
+                            <a href="###" target="_blank" class="link"><strong>[特惠]</strong> 大闸蟹领券满399减180</a>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- 中间便捷服务 -->
+                <div class="cf sidebar-service">
+                    <a href="###" target="_blank" class="focus-service-item fl">
+                        <i class="icon focus-service-icon">&#xe612;</i>
+                        <span class="focus-service-text">话费</span>
+                    </a>
+                    <a href="###" target="_blank" class="focus-service-item fl">
+                        <i class="icon focus-service-icon">&#xe611;</i>
+                        <span class="focus-service-text">机票</span>
+                    </a>
+                    <a href="###" target="_blank" class="focus-service-item fl">
+                        <i class="icon focus-service-icon">&#xe607;</i>
+                        <span class="focus-service-text">电影票</span>
+                    </a>
+                    <a href="###" target="_blank" class="focus-service-item fl">
+                        <i class="icon focus-service-icon">&#xe60e;</i>
+                        <span class="focus-service-text">游戏</span>
+                    </a>
+                    <a href="###" target="_blank" class="focus-service-item fl">
+                        <i class="icon focus-service-icon">&#xe605;</i>
+                        <span class="focus-service-text">彩票</span>
+                    </a>
+                    <a href="###" target="_blank" class="focus-service-item fl">
+                        <i class="icon focus-service-icon">&#xe603;</i>
+                        <span class="focus-service-text">加油卡</span>
+                    </a>
+                    <a href="###" target="_blank" class="focus-service-item fl">
+                        <i class="icon focus-service-icon">&#xe602;</i>
+                        <span class="focus-service-text">酒店</span>
+                    </a>
+                    <a href="###" target="_blank" class="focus-service-item fl">
+                        <i class="icon focus-service-icon">&#xe601;</i>
+                        <span class="focus-service-text">火车票</span>
+                    </a>
+                    <a href="###" target="_blank" class="focus-service-item fl">
+                        <i class="icon focus-service-icon">&#xe60d;</i>
+                        <span class="focus-service-text">众筹</span>
+                    </a>
+                    <a href="###" target="_blank" class="focus-service-item fl">
+                        <i class="icon focus-service-icon">&#xe60c;</i>
+                        <span class="focus-service-text">理财</span>
+                    </a>
+                    <a href="###" target="_blank" class="focus-service-item fl">
+                        <i class="icon focus-service-icon">&#xe610;</i>
+                        <span class="focus-service-text">礼品卡</span>
+                    </a>
+                    <a href="###" target="_blank" class="focus-service-item fl">
+                        <i class="icon focus-service-icon">&#xe60f;</i>
+                        <span class="focus-service-text">白条</span>
+                    </a>
+                </div>
+
+                <!-- 下面广告 -->
+                <div class="sidebar-ad">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 中心焦点区结束 -->
+
+     <!-- 今日推荐广告滑动开始 -->
+    <div class="todays-slide">
+        <div class="container">
+            
+        </div>
+    </div>
+    <!-- 今日推荐广告滑动结束 -->
+
+    <!-- 楼层商品开始 -->
+    <!-- 最外层的父容器  1楼-->
+    <div class="floor floor1">
+        <!-- 居中的container -->
+        <div class="container">
+            <!-- 上面导航标题 -->
+            <div class="floor-head">
+                <!-- 左浮动部分标题 -->
+                <h2 class="floor-title fl">
+                    <!-- 楼层号 -->
+                    <span class="floor-title-num">1F</span>
+                    <span class="floor-title-text">服装鞋包</span>
+                </h2>
+                <!-- 右浮动部分tab选项卡 -->
+                <ul class="tab-item-wrap fr">
+                    <!-- tab1 -->
+                    <li class="fl tab-item tab-item-active">大牌</li>
+                    <!-- tab2 -->
+                    <!-- 分隔线 -->
+                    <!-- <i class="floor-divider fl"></i> -->
+                    <li class="fl tab-item">男装</li>
+                    <!-- 分隔线 -->
+                    <!-- <i class="floor-divider fl"></i> -->
+                    <!-- tab3 -->
+                    <li class="fl tab-item">女装</li>
+                </ul>
+            </div>
+            <!-- 下面商品 -->
+            <div class="floor-body">
+                <!-- tab1大牌选项卡对应12个商品 -->
+                <ul class="tab-panel clearfix">
+                    <li class="floor-item fl" id="text">
+                        
+                    </li>
+                    <li class="floor-item fl">
+                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/loading.gif" class="floor-img" data-src="img/floor/1/1/2.png" alt="" /></a></p>
+                        <p class="floor-item-name"><a href="###" target="_blank" class="link">adidas 阿迪达斯 训练 男子</a></p>
+                        <p class="floor-item-price">￥335</p>
+                    </li>
+                    <li class="floor-item fl">
+                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/loading.gif" class="floor-img" data-src="img/floor/1/1/3.png" alt="" /></a></p>
+                        <p class="floor-item-name"><a href="###" target="_blank" class="link">必迈BMAI一体织跑步短袖T恤</a></p>
+                        <p class="floor-item-price">￥159</p>
+                    </li>
+                    <li class="floor-item fl">
+                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/loading.gif" class="floor-img" data-src="img/floor/1/1/4.png" alt="" /></a></p>
+                        <p class="floor-item-name"><a href="###" target="_blank" class="link">NBA袜子半毛圈运动高邦棉袜</a></p>
+                        <p class="floor-item-price">￥65</p>
+                    </li>
+                    <li class="floor-item fl">
+                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/loading.gif" class="floor-img" data-src="img/floor/1/1/5.png" alt="" /></a></p>
+                        <p class="floor-item-name"><a href="###" target="_blank" class="link">特步官方运动帽男女帽子2016</a></p>
+                        <p class="floor-item-price">￥69</p>
+                    </li>
+                    <li class="floor-item fl">
+                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/loading.gif" class="floor-img" data-src="img/floor/1/1/6.png" alt="" /></a></p>
+                        <p class="floor-item-name"><a href="###" target="_blank" class="link">KELME足球训练防寒防风手套</a></p>
+                        <p class="floor-item-price">￥4999</p>
+                    </li>
+                    <li class="floor-item fl">
+                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/loading.gif" class="floor-img" data-src="img/floor/1/1/7.png" alt="" /></a></p>
+                        <p class="floor-item-name"><a href="###" target="_blank" class="link">战地吉普三合一冲锋衣</a></p>
+                        <p class="floor-item-price">￥289</p>
+                    </li>
+                    <li class="floor-item fl">
+                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/loading.gif" class="floor-img" data-src="img/floor/1/1/8.png" alt="" /></a></p>
+                        <p class="floor-item-name"><a href="###" target="_blank" class="link">探路者户外男士徒步鞋</a></p>
+                        <p class="floor-item-price">￥369</p>
+                    </li>
+                    <li class="floor-item fl">
+                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/loading.gif" class="floor-img" data-src="img/floor/1/1/9.png" alt="" /></a></p>
+                        <p class="floor-item-name"><a href="###" target="_blank" class="link">羽绒服2015秋冬新款轻薄男士</a></p>
+                        <p class="floor-item-price">￥399</p>
+                    </li>
+                    <li class="floor-item fl">
+                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/loading.gif" class="floor-img" data-src="img/floor/1/1/10.png" alt="" /></a></p>
+                        <p class="floor-item-name"><a href="###" target="_blank" class="link">溯溪鞋涉水鞋户外鞋</a></p>
+                        <p class="floor-item-price">￥689</p>
+                    </li>
+                    <li class="floor-item fl">
+                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/loading.gif" class="floor-img" data-src="img/floor/1/1/11.png" alt="" /></a></p>
+                        <p class="floor-item-name"><a href="###" target="_blank" class="link">旅行背包多功能双肩背包</a></p>
+                        <p class="floor-item-price">￥269</p>
+                    </li>
+                    <li class="floor-item fl">
+                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/loading.gif" class="floor-img" data-src="img/floor/1/1/12.png" alt="" /></a></p>
+                        <p class="floor-item-name"><a href="###" target="_blank" class="link">户外旅行双肩背包OS0099</a></p>
+                        <p class="floor-item-price">￥99</p>
+                    </li>
+                </ul>
+                <!-- tab2男装选项卡对应12个商品 -->
+                <ul class="tab-panel clearfix">
+                    <li class="floor-item fl">
+                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/loading.gif" class="floor-img" data-src="img/floor/1/3/3.png" alt="" /></a></p>
+                        <p class="floor-item-name"><a href="###" target="_blank" class="link">必迈BMAI一体织跑步短袖T恤</a></p>
+                        <p class="floor-item-price">￥159</p>
+                    </li>
+                    <li class="floor-item fl">
+                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/loading.gif" class="floor-img" data-src="img/floor/1/3/4.png" alt="" /></a></p>
+                        <p class="floor-item-name"><a href="###" target="_blank" class="link">NBA袜子半毛圈运动高邦棉袜</a></p>
+                        <p class="floor-item-price">￥65</p>
+                    </li>
+                    <li class="floor-item fl">
+                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/loading.gif" class="floor-img" data-src="img/floor/1/3/1.png" alt="" /></a></p>
+                        <p class="floor-item-name"><a href="###" target="_blank" class="link">匡威男棒球开衫外套2015</a></p>
+                        <p class="floor-item-price">￥479</p>
+                    </li>
+                    <li class="floor-item fl">
+                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/loading.gif" class="floor-img" data-src="img/floor/1/3/2.png" alt="" /></a></p>
+                        <p class="floor-item-name"><a href="###" target="_blank" class="link">adidas 阿迪达斯 训练 男子</a></p>
+                        <p class="floor-item-price">￥335</p>
+                    </li>
+                    <li class="floor-item fl">
+                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/loading.gif" class="floor-img" data-src="img/floor/1/3/5.png" alt="" /></a></p>
+                        <p class="floor-item-name"><a href="###" target="_blank" class="link">特步官方运动帽男女帽子2016</a></p>
+                        <p class="floor-item-price">￥69</p>
+                    </li>
+                    <li class="floor-item fl">
+                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/loading.gif" class="floor-img" data-src="img/floor/1/3/6.png" alt="" /></a></p>
+                        <p class="floor-item-name"><a href="###" target="_blank" class="link">KELME足球训练防寒防风手套</a></p>
+                        <p class="floor-item-price">￥4999</p>
+                    </li>
+                    <li class="floor-item fl">
+                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/loading.gif" class="floor-img" data-src="img/floor/1/3/9.png" alt="" /></a></p>
+                        <p class="floor-item-name"><a href="###" target="_blank" class="link">羽绒服2015秋冬新款轻薄男士</a></p>
+                        <p class="floor-item-price">￥399</p>
+                    </li>
+                    <li class="floor-item fl">
+                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/loading.gif" class="floor-img" data-src="img/floor/1/3/11.png" alt="" /></a></p>
+                        <p class="floor-item-name"><a href="###" target="_blank" class="link">旅行背包多功能双肩背包</a></p>
+                        <p class="floor-item-price">￥269</p>
+                    </li>
+                    <li class="floor-item fl">
+                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/loading.gif" class="floor-img" data-src="img/floor/1/3/10.png" alt="" /></a></p>
+                        <p class="floor-item-name"><a href="###" target="_blank" class="link">溯溪鞋涉水鞋户外鞋</a></p>
+                        <p class="floor-item-price">￥689</p>
+                    </li>
+                    <li class="floor-item fl">
+                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/loading.gif" class="floor-img" data-src="img/floor/1/3/12.png" alt="" /></a></p>
+                        <p class="floor-item-name"><a href="###" target="_blank" class="link">户外旅行双肩背包OS0099</a></p>
+                        <p class="floor-item-price">￥99</p>
+                    </li>
+                    <li class="floor-item fl">
+                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/loading.gif" class="floor-img" data-src="img/floor/1/3/7.png" alt="" /></a></p>
+                        <p class="floor-item-name"><a href="###" target="_blank" class="link">战地吉普三合一冲锋衣</a></p>
+                        <p class="floor-item-price">￥289</p>
+                    </li>
+                    <li class="floor-item fl">
+                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/loading.gif" class="floor-img" data-src="img/floor/1/3/8.png" alt="" /></a></p>
+                        <p class="floor-item-name"><a href="###" target="_blank" class="link">探路者户外男士徒步鞋</a></p>
+                        <p class="floor-item-price">￥369</p>
+                    </li>
+                </ul>
+                <!-- tab3女装选项卡对应12个商品 -->
+                <ul class="tab-panel clearfix">
+                    <li class="floor-item fl">
+                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/loading.gif" class="floor-img" data-src="img/floor/1/2/7.png" alt="" /></a></p>
+                        <p class="floor-item-name"><a href="###" target="_blank" class="link">战地吉普三合一冲锋衣</a></p>
+                        <p class="floor-item-price">￥289</p>
+                    </li>
+                    <li class="floor-item fl">
+                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/loading.gif" class="floor-img" data-src="img/floor/1/2/8.png" alt="" /></a></p>
+                        <p class="floor-item-name"><a href="###" target="_blank" class="link">探路者户外男士徒步鞋</a></p>
+                        <p class="floor-item-price">￥369</p>
+                    </li>
+                    <li class="floor-item fl">
+                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/loading.gif" class="floor-img" data-src="img/floor/1/2/9.png" alt="" /></a></p>
+                        <p class="floor-item-name"><a href="###" target="_blank" class="link">羽绒服2015秋冬新款轻薄男士</a></p>
+                        <p class="floor-item-price">￥399</p>
+                    </li>
+                    <li class="floor-item fl">
+                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/loading.gif" class="floor-img" data-src="img/floor/1/2/10.png" alt="" /></a></p>
+                        <p class="floor-item-name"><a href="###" target="_blank" class="link">溯溪鞋涉水鞋户外鞋</a></p>
+                        <p class="floor-item-price">￥689</p>
+                    </li>
+                    <li class="floor-item fl">
+                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/loading.gif" class="floor-img" data-src="img/floor/1/2/11.png" alt="" /></a></p>
+                        <p class="floor-item-name"><a href="###" target="_blank" class="link">旅行背包多功能双肩背包</a></p>
+                        <p class="floor-item-price">￥269</p>
+                    </li>
+                    <li class="floor-item fl">
+                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/loading.gif" class="floor-img" data-src="img/floor/1/2/12.png" alt="" /></a></p>
+                        <p class="floor-item-name"><a href="###" target="_blank" class="link">户外旅行双肩背包OS0099</a></p>
+                        <p class="floor-item-price">￥99</p>
+                    </li>
+                    <li class="floor-item fl">
+                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/loading.gif" class="floor-img" data-src="img/floor/1/2/1.png" alt="" /></a></p>
+                        <p class="floor-item-name"><a href="###" target="_blank" class="link">匡威男棒球开衫外套2015</a></p>
+                        <p class="floor-item-price">￥479</p>
+                    </li>
+                    <li class="floor-item fl">
+                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/loading.gif" class="floor-img" data-src="img/floor/1/2/2.png" alt="" /></a></p>
+                        <p class="floor-item-name"><a href="###" target="_blank" class="link">adidas 阿迪达斯 训练 男子</a></p>
+                        <p class="floor-item-price">￥335</p>
+                    </li>
+                    <li class="floor-item fl">
+                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/loading.gif" class="floor-img" data-src="img/floor/1/2/3.png" alt="" /></a></p>
+                        <p class="floor-item-name"><a href="###" target="_blank" class="link">必迈BMAI一体织跑步短袖T恤</a></p>
+                        <p class="floor-item-price">￥159</p>
+                    </li>
+                    <li class="floor-item fl">
+                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/loading.gif" class="floor-img" data-src="img/floor/1/2/4.png" alt="" /></a></p>
+                        <p class="floor-item-name"><a href="###" target="_blank" class="link">NBA袜子半毛圈运动高邦棉袜</a></p>
+                        <p class="floor-item-price">￥65</p>
+                    </li>
+                    <li class="floor-item fl">
+                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/loading.gif" class="floor-img" data-src="img/floor/1/2/5.png" alt="" /></a></p>
+                        <p class="floor-item-name"><a href="###" target="_blank" class="link">特步官方运动帽男女帽子2016</a></p>
+                        <p class="floor-item-price">￥69</p>
+                    </li>
+                    <li class="floor-item fl">
+                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/loading.gif" class="floor-img" data-src="img/floor/1/2/6.png" alt="" /></a></p>
+                        <p class="floor-item-name"><a href="###" target="_blank" class="link">KELME足球训练防寒防风手套</a></p>
+                        <p class="floor-item-price">￥4999</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- 楼层商品结束 -->
+
+    <!-- 2楼 -->
+    <div class="floor floor2">
+        <!-- 居中的container -->
+        <div class="container">
+            <!-- 上面导航标题 -->
+            <div class="floor-head">
+                <!-- 左浮动部分标题 -->
+                <h2 class="floor-title fl">
+                    <!-- 楼层号 -->
+                    <span class="floor-title-num">2F</span>
+                    <span class="floor-title-text">个护美妆</span>
+                </h2>
+                <!-- 右浮动部分tab选项卡 -->
+                <ul class="tab-item-wrap fr">
+                    <!-- tab1 -->
+                    <li class="fl tab-item tab-item-active">热门</li>
+                    <!-- tab2 -->
+                    <!-- 分隔线 -->
+                    <!-- <i class="floor-divider fl"></i> -->
+                    <li class="fl tab-item">大牌</li>
+                    <!-- 分隔线 -->
+                    <!-- <i class="floor-divider fl"></i> -->
+                    <!-- tab3 -->
+                    <li class="fl tab-item">名品</li>
+                </ul>
+            </div>
+            <!-- 下面商品 -->
+            <div class="floor-body">
+                <ul class="tab-panel clearfix">
+                    <li class="floor-item fl">
+                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/loading.gif" class="floor-img" data-src="img/floor/2/1/1.png" alt="" /></a></p>
+                        <p class="floor-item-name"><a href="###" target="_blank" class="link">韩束红石榴鲜活水盈七件套装</a></p>
+                        <p class="floor-item-price">￥169</p>
+                    </li>
+                    <li class="floor-item fl">
+                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/loading.gif" class="floor-img" data-src="img/floor/2/1/2.png" alt="" /></a></p>
+                        <p class="floor-item-name"><a href="###" target="_blank" class="link">温碧泉八杯水亲亲水润五件套装</a></p>
+                        <p class="floor-item-price">￥198</p>
+                    </li>
+                    <li class="floor-item fl">
+                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/loading.gif" class="floor-img" data-src="img/floor/2/1/3.png" alt="" /></a></p>
+                        <p class="floor-item-name"><a href="###" target="_blank" class="link">御泥坊红酒透亮矿物蚕丝面膜贴</a></p>
+                        <p class="floor-item-price">￥79.9</p>
+                    </li>
+                    <li class="floor-item fl">
+                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/loading.gif" class="floor-img" data-src="img/floor/2/1/4.png" alt="" /></a></p>
+                        <p class="floor-item-name"><a href="###" target="_blank" class="link">吉列手动剃须刀锋隐致护</a></p>
+                        <p class="floor-item-price">￥228</p>
+                    </li>
+                    <li class="floor-item fl">
+                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/loading.gif" class="floor-img" data-src="img/floor/2/1/5.png" alt="" /></a></p>
+                        <p class="floor-item-name"><a href="###" target="_blank" class="link">Mediheal水润保湿面膜</a></p>
+                        <p class="floor-item-price">￥119</p>
+                    </li>
+                    <li class="floor-item fl">
+                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/loading.gif" class="floor-img" data-src="img/floor/2/1/6.png" alt="" /></a></p>
+                        <p class="floor-item-name"><a href="###" target="_blank" class="link">纳益其尔芦荟舒缓保湿凝胶</a></p>
+                        <p class="floor-item-price">￥39</p>
+                    </li>
+                    <li class="floor-item fl">
+                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/loading.gif" class="floor-img" data-src="img/floor/2/1/7.png" alt="" /></a></p>
+                        <p class="floor-item-name"><a href="###" target="_blank" class="link">宝拉珍选基础护肤旅行四件套</a></p>
+                        <p class="floor-item-price">￥299</p>
+                    </li>
+                    <li class="floor-item fl">
+                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/loading.gif" class="floor-img" data-src="img/floor/2/1/8.png" alt="" /></a></p>
+                        <p class="floor-item-name"><a href="###" target="_blank" class="link">温碧泉透芯润五件套装</a></p>
+                        <p class="floor-item-price">￥257</p>
+                    </li>
+                    <li class="floor-item fl">
+                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/loading.gif" class="floor-img" data-src="img/floor/2/1/9.png" alt="" /></a></p>
+                        <p class="floor-item-name"><a href="###" target="_blank" class="link">玉兰油多效修护三部曲套装</a></p>
+                        <p class="floor-item-price">￥199</p>
+                    </li>
+                    <li class="floor-item fl">
+                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/loading.gif" class="floor-img" data-src="img/floor/2/1/10.png" alt="" /></a></p>
+                        <p class="floor-item-name"><a href="###" target="_blank" class="link">LOREAL火山岩控油清痘洁面膏</a></p>
+                        <p class="floor-item-price">￥36</p>
+                    </li>
+                    <li class="floor-item fl">
+                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/loading.gif" class="floor-img" data-src="img/floor/2/1/11.png" alt="" /></a></p>
+                        <p class="floor-item-name"><a href="###" target="_blank" class="link">百雀羚水嫩倍现盈透精华水</a></p>
+                        <p class="floor-item-price">￥139</p>
+                    </li>
+                    <li class="floor-item fl">
+                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/loading.gif" class="floor-img" data-src="img/floor/2/1/12.png" alt="" /></a></p>
+                        <p class="floor-item-name"><a href="###" target="_blank" class="link">珀莱雅新柔皙莹润三件套</a></p>
+                        <p class="floor-item-price">￥99</p>
+                    </li>
+                </ul>
+                <ul class="tab-panel clearfix">
+                    <li class="floor-item fl">
+                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/loading.gif" class="floor-img" data-src="img/floor/2/2/1.png" alt="" /></a></p>
+                        <p class="floor-item-name"><a href="###" target="_blank" class="link">匡威男棒球开衫外套2015</a></p>
+                        <p class="floor-item-price">￥479</p>
+                    </li>
+                    <li class="floor-item fl">
+                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/loading.gif" class="floor-img" data-src="img/floor/2/2/2.png" alt="" /></a></p>
+                        <p class="floor-item-name"><a href="###" target="_blank" class="link">adidas 阿迪达斯 训练 男子</a></p>
+                        <p class="floor-item-price">￥335</p>
+                    </li>
+                    <li class="floor-item fl">
+                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/loading.gif" class="floor-img" data-src="img/floor/2/2/3.png" alt="" /></a></p>
+                        <p class="floor-item-name"><a href="###" target="_blank" class="link">必迈BMAI一体织跑步短袖T恤</a></p>
+                        <p class="floor-item-price">￥159</p>
+                    </li>
+                    <li class="floor-item fl">
+                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/loading.gif" class="floor-img" data-src="img/floor/2/2/4.png" alt="" /></a></p>
+                        <p class="floor-item-name"><a href="###" target="_blank" class="link">NBA袜子半毛圈运动高邦棉袜</a></p>
+                        <p class="floor-item-price">￥65</p>
+                    </li>
+                    <li class="floor-item fl">
+                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/loading.gif" class="floor-img" data-src="img/floor/2/2/5.png" alt="" /></a></p>
+                        <p class="floor-item-name"><a href="###" target="_blank" class="link">特步官方运动帽男女帽子2016</a></p>
+                        <p class="floor-item-price">￥69</p>
+                    </li>
+                    <li class="floor-item fl">
+                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/loading.gif" class="floor-img" data-src="img/floor/2/2/6.png" alt="" /></a></p>
+                        <p class="floor-item-name"><a href="###" target="_blank" class="link">KELME足球训练防寒防风手套</a></p>
+                        <p class="floor-item-price">￥4999</p>
+                    </li>
+                    <li class="floor-item fl">
+                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/loading.gif" class="floor-img" data-src="img/floor/2/2/7.png" alt="" /></a></p>
+                        <p class="floor-item-name"><a href="###" target="_blank" class="link">战地吉普三合一冲锋衣</a></p>
+                        <p class="floor-item-price">￥289</p>
+                    </li>
+                    <li class="floor-item fl">
+                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/loading.gif" class="floor-img" data-src="img/floor/2/2/8.png" alt="" /></a></p>
+                        <p class="floor-item-name"><a href="###" target="_blank" class="link">探路者户外男士徒步鞋</a></p>
+                        <p class="floor-item-price">￥369</p>
+                    </li>
+                    <li class="floor-item fl">
+                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/loading.gif" class="floor-img" data-src="img/floor/2/2/9.png" alt="" /></a></p>
+                        <p class="floor-item-name"><a href="###" target="_blank" class="link">羽绒服2015秋冬新款轻薄男士</a></p>
+                        <p class="floor-item-price">￥399</p>
+                    </li>
+                    <li class="floor-item fl">
+                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/loading.gif" class="floor-img" data-src="img/floor/2/2/10.png" alt="" /></a></p>
+                        <p class="floor-item-name"><a href="###" target="_blank" class="link">溯溪鞋涉水鞋户外鞋</a></p>
+                        <p class="floor-item-price">￥689</p>
+                    </li>
+                    <li class="floor-item fl">
+                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/loading.gif" class="floor-img" data-src="img/floor/2/2/11.png" alt="" /></a></p>
+                        <p class="floor-item-name"><a href="###" target="_blank" class="link">旅行背包多功能双肩背包</a></p>
+                        <p class="floor-item-price">￥269</p>
+                    </li>
+                    <li class="floor-item fl">
+                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/loading.gif" class="floor-img" data-src="img/floor/2/2/12.png" alt="" /></a></p>
+                        <p class="floor-item-name"><a href="###" target="_blank" class="link">户外旅行双肩背包OS0099</a></p>
+                        <p class="floor-item-price">￥99</p>
+                    </li>
+                </ul>
+                <ul class="tab-panel clearfix">
+                    <li class="floor-item fl">
+                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/loading.gif" class="floor-img" data-src="img/floor/2/3/3.png" alt="" /></a></p>
+                        <p class="floor-item-name"><a href="###" target="_blank" class="link">必迈BMAI一体织跑步短袖T恤</a></p>
+                        <p class="floor-item-price">￥159</p>
+                    </li>
+                    <li class="floor-item fl">
+                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/loading.gif" class="floor-img" data-src="img/floor/2/3/4.png" alt="" /></a></p>
+                        <p class="floor-item-name"><a href="###" target="_blank" class="link">NBA袜子半毛圈运动高邦棉袜</a></p>
+                        <p class="floor-item-price">￥65</p>
+                    </li>
+                    <li class="floor-item fl">
+                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/loading.gif" class="floor-img" data-src="img/floor/2/3/5.png" alt="" /></a></p>
+                        <p class="floor-item-name"><a href="###" target="_blank" class="link">特步官方运动帽男女帽子2016</a></p>
+                        <p class="floor-item-price">￥69</p>
+                    </li>
+                    <li class="floor-item fl">
+                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/loading.gif" class="floor-img" data-src="img/floor/2/3/6.png" alt="" /></a></p>
+                        <p class="floor-item-name"><a href="###" target="_blank" class="link">KELME足球训练防寒防风手套</a></p>
+                        <p class="floor-item-price">￥4999</p>
+                    </li>
+                    <li class="floor-item fl">
+                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/loading.gif" class="floor-img" data-src="img/floor/2/3/7.png" alt="" /></a></p>
+                        <p class="floor-item-name"><a href="###" target="_blank" class="link">战地吉普三合一冲锋衣</a></p>
+                        <p class="floor-item-price">￥289</p>
+                    </li>
+                    <li class="floor-item fl">
+                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/loading.gif" class="floor-img" data-src="img/floor/2/3/8.png" alt="" /></a></p>
+                        <p class="floor-item-name"><a href="###" target="_blank" class="link">探路者户外男士徒步鞋</a></p>
+                        <p class="floor-item-price">￥369</p>
+                    </li>
+                    <li class="floor-item fl">
+                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/loading.gif" class="floor-img" data-src="img/floor/2/3/9.png" alt="" /></a></p>
+                        <p class="floor-item-name"><a href="###" target="_blank" class="link">羽绒服2015秋冬新款轻薄男士</a></p>
+                        <p class="floor-item-price">￥399</p>
+                    </li>
+                    <li class="floor-item fl">
+                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/loading.gif" class="floor-img" data-src="img/floor/2/3/10.png" alt="" /></a></p>
+                        <p class="floor-item-name"><a href="###" target="_blank" class="link">溯溪鞋涉水鞋户外鞋</a></p>
+                        <p class="floor-item-price">￥689</p>
+                    </li>
+                    <li class="floor-item fl">
+                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/loading.gif" class="floor-img" data-src="img/floor/2/3/11.png" alt="" /></a></p>
+                        <p class="floor-item-name"><a href="###" target="_blank" class="link">旅行背包多功能双肩背包</a></p>
+                        <p class="floor-item-price">￥269</p>
+                    </li>
+                    <li class="floor-item fl">
+                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/loading.gif" class="floor-img" data-src="img/floor/2/3/12.png" alt="" /></a></p>
+                        <p class="floor-item-name"><a href="###" target="_blank" class="link">户外旅行双肩背包OS0099</a></p>
+                        <p class="floor-item-price">￥99</p>
+                    </li>
+                    <li class="floor-item fl">
+                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/loading.gif" class="floor-img" data-src="img/floor/2/3/1.png" alt="" /></a></p>
+                        <p class="floor-item-name"><a href="###" target="_blank" class="link">匡威男棒球开衫外套2015</a></p>
+                        <p class="floor-item-price">￥479</p>
+                    </li>
+                    <li class="floor-item fl">
+                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/loading.gif" class="floor-img" data-src="img/floor/2/3/2.png" alt="" /></a></p>
+                        <p class="floor-item-name"><a href="###" target="_blank" class="link">adidas 阿迪达斯 训练 男子</a></p>
+                        <p class="floor-item-price">￥335</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- 3楼 -->
+    <div class="floor floor3">
+        <!-- 居中的container -->
+        <div class="container">
+            <!-- 上面导航标题 -->
+            <div class="floor-head">
+                <!-- 左浮动部分标题 -->
+                <h2 class="floor-title fl">
+                    <!-- 楼层号 -->
+                    <span class="floor-title-num">3F</span>
+                    <span class="floor-title-text">手机通讯</span>
+                </h2>
+                <!-- 右浮动部分tab选项卡 -->
+                <ul class="tab-item-wrap fr">
+                    <!-- tab1 -->
+                    <li class="fl tab-item tab-item-active">优选</li>
+                    <!-- tab2 -->
+                    <!-- 分隔线 -->
+                    <!-- <i class="floor-divider fl"></i> -->
+                    <li class="fl tab-item">热门</li>
+                    <!-- 分隔线 -->
+                    <!-- <i class="floor-divider fl"></i> -->
+                    <!-- tab3 -->
+                    <li class="fl tab-item">新机</li>
+                </ul>
+            </div>
+            <!-- 下面商品 -->
+            <div class="floor-body">
+                <ul class="tab-panel clearfix">
+                    <li class="floor-item fl">
+                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/loading.gif" class="floor-img" data-src="img/floor/3/1/1.png" alt="" /></a></p>
+                        <p class="floor-item-name"><a href="###" target="_blank" class="link">摩托罗拉 Moto Z Play</a></p>
+                        <p class="floor-item-price">￥3999</p>
+                    </li>
+                    <li class="floor-item fl">
+                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/loading.gif" class="floor-img" data-src="img/floor/3/1/2.png" alt="" /></a></p>
+                        <p class="floor-item-name"><a href="###" target="_blank" class="link">Apple iPhone 7 (A1660)</a></p>
+                        <p class="floor-item-price">￥6188</p>
+                    </li>
+                    <li class="floor-item fl">
+                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/loading.gif" class="floor-img" data-src="img/floor/3/1/3.png" alt="" /></a></p>
+                        <p class="floor-item-name"><a href="###" target="_blank" class="link">小米 Note 全网通 白色</a></p>
+                        <p class="floor-item-price">￥999</p>
+                    </li>
+                    <li class="floor-item fl">
+                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/loading.gif" class="floor-img" data-src="img/floor/3/1/4.png" alt="" /></a></p>
+                        <p class="floor-item-name"><a href="###" target="_blank" class="link">小米5 全网通 标准版 3GB内存</a></p>
+                        <p class="floor-item-price">￥1999</p>
+                    </li>
+                    <li class="floor-item fl">
+                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/loading.gif" class="floor-img" data-src="img/floor/3/1/5.png" alt="" /></a></p>
+                        <p class="floor-item-name"><a href="###" target="_blank" class="link">荣耀7i 海岛蓝 移动联通4G手机</a></p>
+                        <p class="floor-item-price">￥1099</p>
+                    </li>
+                    <li class="floor-item fl">
+                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/loading.gif" class="floor-img" data-src="img/floor/3/1/6.png" alt="" /></a></p>
+                        <p class="floor-item-name"><a href="###" target="_blank" class="link">乐视（Le）乐2（X620）32GB</a></p>
+                        <p class="floor-item-price">￥1099</p>
+                    </li>
+                    <li class="floor-item fl">
+                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/loading.gif" class="floor-img" data-src="img/floor/3/1/7.png" alt="" /></a></p>
+                        <p class="floor-item-name"><a href="###" target="_blank" class="link">OPPO R9 4GB+64GB内存版</a></p>
+                        <p class="floor-item-price">￥2499</p>
+                    </li>
+                    <li class="floor-item fl">
+                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/loading.gif" class="floor-img" data-src="img/floor/3/1/8.png" alt="" /></a></p>
+                        <p class="floor-item-name"><a href="###" target="_blank" class="link">魅蓝note3 全网通公开版</a></p>
+                        <p class="floor-item-price">￥899</p>
+                    </li>
+                    <li class="floor-item fl">
+                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/loading.gif" class="floor-img" data-src="img/floor/3/1/9.png" alt="" /></a></p>
+                        <p class="floor-item-name"><a href="###" target="_blank" class="link">飞利浦 X818 香槟金 全网通4G</a></p>
+                        <p class="floor-item-price">￥1998</p>
+                    </li>
+                    <li class="floor-item fl">
+                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/loading.gif" class="floor-img" data-src="img/floor/3/1/10.png" alt="" /></a></p>
+                        <p class="floor-item-name"><a href="###" target="_blank" class="link">三星 Galaxy S7（G9300）</a></p>
+                        <p class="floor-item-price">￥4088</p>
+                    </li>
+                    <li class="floor-item fl">
+                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/loading.gif" class="floor-img" data-src="img/floor/3/1/11.png" alt="" /></a></p>
+                        <p class="floor-item-name"><a href="###" target="_blank" class="link">华为 荣耀7 双卡双待双通</a></p>
+                        <p class="floor-item-price">￥1128</p>
+                    </li>
+                    <li class="floor-item fl">
+                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/loading.gif" class="floor-img" data-src="img/floor/3/1/12.png" alt="" /></a></p>
+                        <p class="floor-item-name"><a href="###" target="_blank" class="link">努比亚(nubia)Z7Max(NX505J)</a></p>
+                        <p class="floor-item-price">￥728</p>
+                    </li>
+                </ul>
+                <ul class="tab-panel clearfix">
+                    <li class="floor-item fl">
+                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/loading.gif" class="floor-img" data-src="img/floor/3/2/1.png" alt="" /></a></p>
+                        <p class="floor-item-name"><a href="###" target="_blank" class="link">匡威男棒球开衫外套2015</a></p>
+                        <p class="floor-item-price">￥479</p>
+                    </li>
+                    <li class="floor-item fl">
+                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/loading.gif" class="floor-img" data-src="img/floor/3/2/2.png" alt="" /></a></p>
+                        <p class="floor-item-name"><a href="###" target="_blank" class="link">adidas 阿迪达斯 训练 男子</a></p>
+                        <p class="floor-item-price">￥335</p>
+                    </li>
+                    <li class="floor-item fl">
+                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/loading.gif" class="floor-img" data-src="img/floor/3/2/3.png" alt="" /></a></p>
+                        <p class="floor-item-name"><a href="###" target="_blank" class="link">必迈BMAI一体织跑步短袖T恤</a></p>
+                        <p class="floor-item-price">￥159</p>
+                    </li>
+                    <li class="floor-item fl">
+                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/loading.gif" class="floor-img" data-src="img/floor/3/2/4.png" alt="" /></a></p>
+                        <p class="floor-item-name"><a href="###" target="_blank" class="link">NBA袜子半毛圈运动高邦棉袜</a></p>
+                        <p class="floor-item-price">￥65</p>
+                    </li>
+                    <li class="floor-item fl">
+                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/loading.gif" class="floor-img" data-src="img/floor/3/2/5.png" alt="" /></a></p>
+                        <p class="floor-item-name"><a href="###" target="_blank" class="link">特步官方运动帽男女帽子2016</a></p>
+                        <p class="floor-item-price">￥69</p>
+                    </li>
+                    <li class="floor-item fl">
+                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/loading.gif" class="floor-img" data-src="img/floor/3/2/6.png" alt="" /></a></p>
+                        <p class="floor-item-name"><a href="###" target="_blank" class="link">KELME足球训练防寒防风手套</a></p>
+                        <p class="floor-item-price">￥4999</p>
+                    </li>
+                    <li class="floor-item fl">
+                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/loading.gif" class="floor-img" data-src="img/floor/3/2/7.png" alt="" /></a></p>
+                        <p class="floor-item-name"><a href="###" target="_blank" class="link">战地吉普三合一冲锋衣</a></p>
+                        <p class="floor-item-price">￥289</p>
+                    </li>
+                    <li class="floor-item fl">
+                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/loading.gif" class="floor-img" data-src="img/floor/3/2/8.png" alt="" /></a></p>
+                        <p class="floor-item-name"><a href="###" target="_blank" class="link">探路者户外男士徒步鞋</a></p>
+                        <p class="floor-item-price">￥369</p>
+                    </li>
+                    <li class="floor-item fl">
+                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/loading.gif" class="floor-img" data-src="img/floor/3/2/9.png" alt="" /></a></p>
+                        <p class="floor-item-name"><a href="###" target="_blank" class="link">羽绒服2015秋冬新款轻薄男士</a></p>
+                        <p class="floor-item-price">￥399</p>
+                    </li>
+                    <li class="floor-item fl">
+                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/loading.gif" class="floor-img" data-src="img/floor/3/2/10.png" alt="" /></a></p>
+                        <p class="floor-item-name"><a href="###" target="_blank" class="link">溯溪鞋涉水鞋户外鞋</a></p>
+                        <p class="floor-item-price">￥689</p>
+                    </li>
+                    <li class="floor-item fl">
+                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/loading.gif" class="floor-img" data-src="img/floor/3/2/11.png" alt="" /></a></p>
+                        <p class="floor-item-name"><a href="###" target="_blank" class="link">旅行背包多功能双肩背包</a></p>
+                        <p class="floor-item-price">￥269</p>
+                    </li>
+                    <li class="floor-item fl">
+                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/loading.gif" class="floor-img" data-src="img/floor/3/2/12.png" alt="" /></a></p>
+                        <p class="floor-item-name"><a href="###" target="_blank" class="link">户外旅行双肩背包OS0099</a></p>
+                        <p class="floor-item-price">￥99</p>
+                    </li>
+                </ul>
+                <ul class="tab-panel clearfix">
+                    <li class="floor-item fl">
+                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/loading.gif" class="floor-img" data-src="img/floor/3/3/1.png" alt="" /></a></p>
+                        <p class="floor-item-name"><a href="###" target="_blank" class="link">匡威男棒球开衫外套2015</a></p>
+                        <p class="floor-item-price">￥479</p>
+                    </li>
+                    <li class="floor-item fl">
+                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/loading.gif" class="floor-img" data-src="img/floor/3/3/2.png" alt="" /></a></p>
+                        <p class="floor-item-name"><a href="###" target="_blank" class="link">adidas 阿迪达斯 训练 男子</a></p>
+                        <p class="floor-item-price">￥335</p>
+                    </li>
+                    <li class="floor-item fl">
+                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/loading.gif" class="floor-img" data-src="img/floor/3/3/3.png" alt="" /></a></p>
+                        <p class="floor-item-name"><a href="###" target="_blank" class="link">必迈BMAI一体织跑步短袖T恤</a></p>
+                        <p class="floor-item-price">￥159</p>
+                    </li>
+                    <li class="floor-item fl">
+                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/loading.gif" class="floor-img" data-src="img/floor/3/3/4.png" alt="" /></a></p>
+                        <p class="floor-item-name"><a href="###" target="_blank" class="link">NBA袜子半毛圈运动高邦棉袜</a></p>
+                        <p class="floor-item-price">￥65</p>
+                    </li>
+                    <li class="floor-item fl">
+                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/loading.gif" class="floor-img" data-src="img/floor/3/3/5.png" alt="" /></a></p>
+                        <p class="floor-item-name"><a href="###" target="_blank" class="link">特步官方运动帽男女帽子2016</a></p>
+                        <p class="floor-item-price">￥69</p>
+                    </li>
+                    <li class="floor-item fl">
+                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/loading.gif" class="floor-img" data-src="img/floor/3/3/6.png" alt="" /></a></p>
+                        <p class="floor-item-name"><a href="###" target="_blank" class="link">KELME足球训练防寒防风手套</a></p>
+                        <p class="floor-item-price">￥4999</p>
+                    </li>
+                    <li class="floor-item fl">
+                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/loading.gif" class="floor-img" data-src="img/floor/3/3/7.png" alt="" /></a></p>
+                        <p class="floor-item-name"><a href="###" target="_blank" class="link">战地吉普三合一冲锋衣</a></p>
+                        <p class="floor-item-price">￥289</p>
+                    </li>
+                    <li class="floor-item fl">
+                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/loading.gif" class="floor-img" data-src="img/floor/3/3/8.png" alt="" /></a></p>
+                        <p class="floor-item-name"><a href="###" target="_blank" class="link">探路者户外男士徒步鞋</a></p>
+                        <p class="floor-item-price">￥369</p>
+                    </li>
+                    <li class="floor-item fl">
+                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/loading.gif" class="floor-img" data-src="img/floor/3/3/9.png" alt="" /></a></p>
+                        <p class="floor-item-name"><a href="###" target="_blank" class="link">羽绒服2015秋冬新款轻薄男士</a></p>
+                        <p class="floor-item-price">￥399</p>
+                    </li>
+                    <li class="floor-item fl">
+                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/loading.gif" class="floor-img" data-src="img/floor/3/3/10.png" alt="" /></a></p>
+                        <p class="floor-item-name"><a href="###" target="_blank" class="link">溯溪鞋涉水鞋户外鞋</a></p>
+                        <p class="floor-item-price">￥689</p>
+                    </li>
+                    <li class="floor-item fl">
+                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/loading.gif" class="floor-img" data-src="img/floor/3/3/11.png" alt="" /></a></p>
+                        <p class="floor-item-name"><a href="###" target="_blank" class="link">旅行背包多功能双肩背包</a></p>
+                        <p class="floor-item-price">￥269</p>
+                    </li>
+                    <li class="floor-item fl">
+                        <p class="floor-item-pic"><a href="###" target="_blank"><img src="img/floor/loading.gif" class="floor-img" data-src="img/floor/3/3/12.png" alt="" /></a></p>
+                        <p class="floor-item-name"><a href="###" target="_blank" class="link">户外旅行双肩背包OS0099</a></p>
+                        <p class="floor-item-price">￥99</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- 侧栏滚动条 -->
+    <div class="toolbar">
+        <a href="javascript:;" class="toolbar-item">
+            <i class="toolbar-icon icon">&#xe617;</i>
+            <span class="toolbar-text transition">会员</span>
+        </a>
+        <a href="javascript:;" class="toolbar-item">
+            <i class="toolbar-icon icon">&#xe613;</i>
+            <span class="toolbar-text transition">购物车</span>
+        </a>
+        <a href="javascript:;" class="toolbar-item">
+            <i class="toolbar-icon icon">&#xe616;</i>
+            <span class="toolbar-text transition">关注</span>
+        </a>
+        <a href="javascript:;" class="toolbar-item">
+            <i class="toolbar-icon icon">&#xe614;</i>
+            <span class="toolbar-text transition">消息</span>
+        </a>
+        <a href="javascript:;" id="backToTop" class="toolbar-item">
+            <i class="toolbar-icon icon">&#xe615;</i>
+            <span class="toolbar-text transition">顶部</span>
+        </a>
+    </div>
+    
+    <script src="http://mat1.gtimg.com/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script>
+        // 判断当CDN引入jquery不稳定时,引入下载的本地jquery文件
+        window.jQuery || document.write('<script src="js/jquery.js"><\/script>');
+    </script>
+    <script src="js/demand.js"></script>
+    <script src="js/scroll.js"></script>
+    <script src="js/transition.js"></script</script>>
+    <script src="js/dropdown.js"></script>
+    <script src="js/search.js"></script>
+    <script src="js/slide.js"></script>
+    <script src="js/tab.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
+
+
+
